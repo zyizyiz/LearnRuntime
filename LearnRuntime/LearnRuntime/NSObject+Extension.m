@@ -8,8 +8,30 @@
 
 #import "NSObject+Extension.h"
 #import <objc/objc-runtime.h>
-
 @implementation NSObject (Extension)
+
++(BOOL)resolveClassMethod:(SEL)sel {
+    NSLog(@"resolveClassMethod");
+    return false;
+}
+
++(BOOL)resolveInstanceMethod:(SEL)sel {
+    NSLog(@"resolveInstanceMethod");
+    return false;
+}
+
+-(id)forwardingTargetForSelector:(SEL)aSelector {
+    NSLog(@"forwardingTargetForSelector");
+    return nil;
+}
+
+-(void)forwardInvocation:(NSInvocation *)anInvocation {
+    NSLog(@"forwardInvocation");
+    
+}
+-(void)doesNotRecognizeSelector:(SEL)aSelector {
+    NSLog(@"doesNotRecognizeSelector");
+}
 
 /// 归档
 -(void) yz_decoder:(NSCoder *)aDecoder {
