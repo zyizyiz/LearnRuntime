@@ -17,7 +17,7 @@
  1.利用关联属性（AssociatedObject）给分类添加属性
  (objc_getAssociatedObject、objc_setAssociatedObject)
  2.遍历类的所有成员变量（归解档、字典转模型、修改textfield的占位文字颜色(KVO)）
- (objc_copyIvarList)
+ (class_copyIvarList、class_copyPropertyList)
  3.交换方法实现
  (method_exchangeImplementations)
  4.利用消息转发机制解决方法找不到的异常情况
