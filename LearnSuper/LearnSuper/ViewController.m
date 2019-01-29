@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "People.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -15,10 +16,18 @@
 
 @implementation ViewController
 
+- (Class)class
+{
+    return object_getClass(self);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"%@",NSStringFromClass([self class]));
+    // [super class] 就是调用 object_getClass(self);
+    NSLog(@"%@",NSStringFromClass([super class]));
     
+    NSLog(@"-----------------------");
     /*
         函数在栈上 栈的地址分配是从高地址到低地址
         obj -> cls -> People
