@@ -8,6 +8,7 @@
 
 #import "People.h"
 #import <objc/message.h>
+#import "Student.h"
 
 @implementation People
 
@@ -43,6 +44,17 @@
         return YES;
     }
     return [super resolveClassMethod:sel];
+}
+
+
+// 消息转发 转发给另一个target
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    if (aSelector == @selector(forward)) {
+//        Student *student = [Student new];
+//        return student;
+    }
+    return [super forwardingTargetForSelector:aSelector];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  People.h
+//  Student.h
 //  LearnMsgSend
 //
 //  Created by ios on 2019/1/28.
@@ -10,11 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface People : NSObject
-
-- (void)test;
-
-+ (void)test;
+@interface Student : NSObject
 
 - (void)forward;
 

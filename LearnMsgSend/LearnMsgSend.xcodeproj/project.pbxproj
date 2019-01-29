@@ -16,6 +16,7 @@
 		8152E9E021FEA1D6001502B2 /* LearnMsgSendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8152E9DF21FEA1D6001502B2 /* LearnMsgSendTests.m */; };
 		8152E9EB21FEA1D6001502B2 /* LearnMsgSendUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8152E9EA21FEA1D6001502B2 /* LearnMsgSendUITests.m */; };
 		8152E9FA21FEA222001502B2 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 8152E9F921FEA222001502B2 /* People.m */; };
+		8152E9FD21FEACBD001502B2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8152E9FC21FEACBD001502B2 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		8152E9EC21FEA1D6001502B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8152E9F821FEA221001502B2 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
 		8152E9F921FEA222001502B2 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		8152E9FB21FEACBD001502B2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8152E9FC21FEACBD001502B2 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				8152E9D521FEA1D6001502B2 /* main.m */,
 				8152E9F821FEA221001502B2 /* People.h */,
 				8152E9F921FEA222001502B2 /* People.m */,
+				8152E9FB21FEACBD001502B2 /* Student.h */,
+				8152E9FC21FEACBD001502B2 /* Student.m */,
 			);
 			path = LearnMsgSend;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			files = (
 				8152E9FA21FEA222001502B2 /* People.m in Sources */,
 				8152E9CB21FEA1D2001502B2 /* ViewController.m in Sources */,
+				8152E9FD21FEACBD001502B2 /* Student.m in Sources */,
 				8152E9D621FEA1D6001502B2 /* main.m in Sources */,
 				8152E9C821FEA1D2001502B2 /* AppDelegate.m in Sources */,
 			);

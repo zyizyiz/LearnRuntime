@@ -1,8 +1,8 @@
 //
 //  People.h
-//  LearnMsgSend
+//  LearnSuper
 //
-//  Created by ios on 2019/1/28.
+//  Created by ios on 2019/1/29.
 //  Copyright © 2019 KN. All rights reserved.
 //
 
@@ -11,12 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface People : NSObject
-
-- (void)test;
-
-+ (void)test;
-
-- (void)forward;
 
 @end
 
