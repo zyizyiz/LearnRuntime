@@ -31,5 +31,10 @@
 //    NSLog(@"1234567890");
 //}
 
+- (void)print
+{
+//    NSLog(@"my name is %@, age is %@",_name,_age);
+    NSLog(@"my name is %@",self.name);
+}
 
 @end
