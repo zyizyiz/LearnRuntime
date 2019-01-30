@@ -23,6 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // ViewController ViewController UIViewController UIViewController
+    // super 关键词只是从super class 向上找方法而已 参赛还是self
+    // superclass 就是调用 [self class]->superclass;
+    NSLog(@"%@",[self class]);
+    NSLog(@"%@",[super class]);
+    NSLog(@"%@",[self superclass]);
+    NSLog(@"%@",[super superclass]);
+
+    NSLog(@"-----------------------");
+    
+    // ViewController ViewController
     NSLog(@"%@",NSStringFromClass([self class]));
     // [super class] 就是调用 object_getClass(self);
     NSLog(@"%@",NSStringFromClass([super class]));
