@@ -12,6 +12,7 @@
 
 @implementation People
 
+// 第一步
 // 动态方法解析后重新进入消息发送状态
 + (BOOL)resolveInstanceMethod:(SEL)sel
 {
@@ -23,6 +24,7 @@
 //                        sel,
 //                        method_getImplementation(method),
 //                        method_getTypeEncoding(method));
+        NSLog(@"第一步: 消息发送");
         class_addMethod(self,
                         sel,
                         (IMP)C_test, "v16@0:8");
@@ -46,13 +48,15 @@
     return [super resolveClassMethod:sel];
 }
 
-
+// 第二步
 // 消息转发 转发给另一个target
+// ******不区分实例方法和类方法
 - (id)forwardingTargetForSelector:(SEL)aSelector
 {
     if (aSelector == @selector(forward)) {
-//        Student *student = [Student new];
-//        return student;
+        NSLog(@"第二步: 消息转发");
+        Student *student = [Student new];
+        return student;
     }
     return [super forwardingTargetForSelector:aSelector];
 }
